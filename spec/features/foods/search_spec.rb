@@ -19,6 +19,9 @@ RSpec.feature "Foods Page", type: :feature do
     it 'should have the brand owner of each food' do
       expect(page).to have_content("Brand Owner: NOT A BRANDED ITEM")
     end
+    it 'should have the ingredients of each food' do
+      expect(page).to have_content("Ingredients: ORGANIC SWEET POTATOES.")
+    end
     it 'should list ten of the food results' do
       expect(page).to have_content("GTIN/UPC code:", count: 10)
     end
