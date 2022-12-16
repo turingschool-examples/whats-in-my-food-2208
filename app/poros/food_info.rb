@@ -5,8 +5,8 @@ class FoodInfo
                 :ingredients
                 
     def initialize(data)
-        @code = data[:gtinUpc]
         @description = data[:description]
+        @code = data[:gtinUpc]
         @brand = data[:brandOwner]
         @ingredients = data[:ingredients]
     end
