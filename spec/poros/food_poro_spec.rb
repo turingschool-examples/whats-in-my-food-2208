@@ -10,4 +10,9 @@ RSpec.describe Food do
     expect(food.ingrdients).to be_a(Array)
     expect(food.ingrdients).to eq(["FILTERED WATER", "APPLE JUICE CONCENTRATE", "ASCORBIC ACID (VITAMIN C)."])
   end
+
+  describe '#ingredients_list' do
+    it 'fuses ingred array back into string' do
+      expect(food.ingrdients_list).to eq("FILTERED WATER, APPLE JUICE CONCENTRATE, ASCORBIC ACID (VITAMIN C).")
+    end
 end

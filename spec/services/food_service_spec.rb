@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe FoodService do
+RSpec.describe FoodService, :vcr do
   let(:search) { FoodService.search('sweet potatoes') }
 
   it 'establishes a connection for top rated movies', :vcr do

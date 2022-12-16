@@ -4,14 +4,17 @@ RSpec.describe 'Food search page', :vcr, type: :feature do
   describe 'As a user,' do
     describe 'When I visit "/"' do
       context 'And I fill in the search form with "sweet potatoes"' do
-        it 'Then I should be on page "/foods"' do
+        before(:each) do
+          visit '/'
           expect(page).to have_field('q')
           expect(page).to have_button('Search')
-
+  
           fill_out 'q', with: 'sweet potatoes'
-
+  
           click_button 'search'
+        end
 
+        it 'Then I should be on page "/foods"' do
           expect(current_path).to eq(foods_search_path)
         end
 
