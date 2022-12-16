@@ -5,7 +5,7 @@ RSpec.describe 'welcome path' do
     it "redirects me to a /food page" do
       visit '/'
       fill_in(:q, with: "sweet potato")
-      save_and_open_page
+    
       click_on("Search")
       expect(current_path).to eq("/foods")
     end
