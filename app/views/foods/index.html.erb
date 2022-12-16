@@ -1,1 +1,15 @@
-Food Results by Search 
+<h1><center>Food Results by Search </center></h1>
+<hr>
+<br>
+<br>
+
+<%= @total_count %> results found for search <b>'<% @search_term %>'</b>
+
+<%@info.each do |food| %>
+  <p><b>GTIN/UPC: </b> <%= food.upc %></p>
+  <p><b>Description: </b> <%= food.description %></p>
+  <p><b>Brand Owner: </b> <%= food.brand%></p>
+  <p><b>Ingredients: </b> <%= food.ingredients%> </p>
+  <hr>
+<% end %>
+

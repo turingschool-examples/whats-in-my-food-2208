@@ -1,9 +1,10 @@
 class FoodService 
 
   def self.search_foods(food_item)
-    response = conn.get("/fdc/v1/foods/search?query=#{search_term}")
+    response = conn.get("/fdc/v1/foods/search?query=#{food_item}&limit=10")
+   
     data= JSON.parse(response.body, symbolize_names: true)
-    binding.pry
+    
   end
 
 
