@@ -1,8 +1,12 @@
-<h1>Foods#index</h1>
+<h1>Foods#Search</h1>
 
-<% @foods.each do |food| %>
+<h4><b>Total Results for <%="#{params[:q].upcase}" %><b>: <%= @foods[:totalHits] %></h4>
+<hr>
+
+<% @foods[:foods].first(10).each do |food| %>
   <p><b>GTIN/UPC code: </b><%= food[:gtinUpc] %></p>
   <p><b>Description: </b><%= food[:description] %></p>
   <p><b>Brand Owner: </b><%= food[:brandOwner] %></p>
+  <p><b>Ingredients: </b><%= food[:ingredients] %></p>
   <hr>
 <% end %>

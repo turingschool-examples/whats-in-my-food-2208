@@ -21,13 +21,15 @@ describe "Food search page" do
       before :each do
         visit "/"
 
-
+        fill_in(:q, with: "Sweet Potatoes")
+        click_button "Search"
       end
 
       describe "And I fill in the form search with sweet potatoes" do
         describe "and I click search" do
           it "then I should be on page '/foods'" do
 
+            expect(current_path).to eq("/foods")
           end
         end
       end

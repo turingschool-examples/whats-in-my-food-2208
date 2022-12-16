@@ -10,7 +10,7 @@ class UsdaService
 
   def self.food_search(input)
     response = endpoint_response("search?api_key=#{ENV['USDA_API_KEY']}&ingredients=#{input}")
-    json = JSON.parse(response.body, symbolize_names: true)
-    json[:foods].first(10)
+    JSON.parse(response.body, symbolize_names: true)
+    # json[:foods].first(10)
   end
 end
