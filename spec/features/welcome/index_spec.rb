@@ -12,7 +12,7 @@ RSpec.describe 'Landing Page' do
     expect(current_path).to eq("/foods")
   end
 
-  xit 'I should seea  total of the number of items returned byt he search' do 
+  it 'I should seea  total of the number of items returned byt he search' do 
     search_term = 'sweet potatoes'
     
 
