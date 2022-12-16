@@ -10,8 +10,9 @@ RSpec.describe 'welcome index' do
   end
 
   it 'i see a total number of items returned from my search' do 
+    @foods = FoodFacade.find_food("Sweet Potato")
     visit foods_path
 
-    expect(current_page).to have_content(tmyUurfe2wJOKLnvfz4ldgjp9dpKcIGCDaaHXGaR)
+    # expect(current_page).to have_content("Foods")
   end
 end
