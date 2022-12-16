@@ -1,22 +1,25 @@
 require "rails_helper"
 
 RSpec.describe "Foods Index Page" do
+
+  before(:each) do
+    visit root_path
+    fill_in :q, with: 'Sweet Potatoes'
+    click_button('Search')
+  end
   
   it "should contain the total number of items returned by a search" do
-    visit "/foods"
-
-    fill_in :keyword, with: 'Sweet Potatoes'
-        click_button('Find Top Rated Movies')
-        expect(current_path).to eq(user_movies_path(@user1.id))
-
-
+    
+    expect(current_path).to eq("/foods")
+    expect(page).to have_content("Total Number Of Results: 49083")
   end
 
-  it "should have a list of no more than 10 foods that contain the search item" do
-
+  xit "should have a list of no more than 10 foods that contain the search item" do
+    within("#foods-#{food1.id}")
+    expect(page).to have_content("")
   end
 
-  it "for each food listed, there should be the foods GTIN/UPC, description, Brand Owner, ingredients" do 
+  xit "for each food listed, there should be the foods GTIN/UPC, description, Brand Owner, ingredients" do 
     
   end
 end
