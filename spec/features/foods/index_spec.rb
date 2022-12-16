@@ -16,7 +16,7 @@ describe 'The Foods Index Page' do
           expect(current_path).to eq(foods_path)
         end
         it 'I see a total number of items returned by the search' do
-          expect(page).to have_content('Total number of items: 49083')
+          expect(page).to have_content('Total Number of Items: 49083')
         end
         it 'I see a list of 10 foods that contain the ingredient "sweet potatoes"'
         it "I see each food's GTIN/UPC code, description, Brand Owner, and ingredients"
