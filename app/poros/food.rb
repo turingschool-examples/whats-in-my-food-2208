@@ -7,13 +7,4 @@ class Food
     @brand_owner = attributes[:brandOwner]
     @ingredients = attributes[:ingredients]
   end
-
-  # def take_ten
-  #   require 'pry'; binding.pry
-  #   take(10)
-  # end
-
-  # def total_count
-  #   count
-  # end
 end
