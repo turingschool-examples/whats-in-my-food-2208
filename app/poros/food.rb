@@ -8,10 +8,10 @@ class Food
     @id = code
     @description = description
     @brandOwner = brandOwner
-    @ingredients = ingredients.split(', ')
+    @ingredients = ingredients
   end
 
-  def ingredients_list
-    ingredients.join(', ')
-  end
+  # def ingredients_list
+  #   ingredients.join(', ')
+  # end
 end
