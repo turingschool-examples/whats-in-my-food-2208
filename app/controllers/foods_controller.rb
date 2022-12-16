@@ -1,7 +1,7 @@
 class FoodsController < ApplicationController
   def index
-    require 'pry'; binding.pry
     @foods = FoodSearch.new.search_food(params[:q])
+    require 'pry'; binding.pry
   end
 
   def show
