@@ -1,0 +1,8 @@
+<h1>Foods#index</h1>
+
+<% @foods.each do |food| %>
+  <p><b>GTIN/UPC code: </b><%= food[:gtinUpc] %></p>
+  <p><b>Description: </b><%= food[:description] %></p>
+  <p><b>Brand Owner: </b><%= food[:brandOwner] %></p>
+  <hr>
+<% end %>
