@@ -9,7 +9,7 @@ require 'rails_helper'
 # - The food's Brand Owner
 # - The food's ingredients
 RSpec.describe 'Foods Search Page' do
-    it 'displays total number of items returned by the search' do
+    xit 'displays total number of items returned by the search' do
         visit root_path
 
         fill_in :q, with: 'sweet potatoes'
@@ -26,7 +26,7 @@ RSpec.describe 'Foods Search Page' do
 
     end
 
-    it "displays each food's GTIN/UPC code, description, brand owner, and ingredients" do
+    xit "displays each food's GTIN/UPC code, description, brand owner, and ingredients" do
         visit root_path
 
         fill_in :q, with: 'sweet potatoes'
