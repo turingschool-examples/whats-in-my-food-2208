@@ -1,3 +1,4 @@
+require 'rails_helper'
 # As a user,
 # When I visit "/"
 # And I fill in the search form with "sweet potatoes"
@@ -13,11 +14,11 @@
 # - The food's description
 # - The food's Brand Owner
 # - The food's ingredients
-require 'rails_helper'
+
 
 RSpec.describe 'Welcome Page' do
     it 'user can search for ingredients' do
-        visit '/'
+        visit root_path
 
         fill_in :q, with: 'sweet potatoes'
         click_button 'Search'
