@@ -1,0 +1,31 @@
+<h2>Search results for: <%=@search_term%></h2>
+<br>
+<h3>Total number of results: <span id='result-count'><%=@foods[:totalHits]%></span></h3>
+<table id='results-table'>
+  <tr>
+    <td>Code</td>
+    <td>Description</td>
+    <td>Owner</td>
+    <td>Ingredients</td>
+  </tr>
+
+  <% @foods[:results].each do |food|%>
+    <tr class='food'>
+      <td class='code'>
+        <%=food.id%>
+      </td>
+
+      <td class='description'>
+        <%=food.description%>
+      </td>
+
+      <td class='owner'>
+        <%=food.brandOwner%>
+      </td>
+
+      <td class='ingredients'>
+        <%=food.ingredients%>
+      </td>
+    </tr>
+  <%end%>
+</table>
