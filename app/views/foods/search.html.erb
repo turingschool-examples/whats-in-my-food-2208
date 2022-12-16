@@ -1,10 +1,10 @@
 <h1> Search Results for <%=@food%></h1>
-Results found for<%=@food%>: <%= @total_count%>
+Results found for<%=@food%>: <%= @total_count%><br>
 
 
-<h3><% @foods.each do |food|%>
-  UPC: <p><%= food.gtin_upc%></p>
-  Description: <p><%= food.description%></p>
-  Brand: <p><%= food.brand_owner%></p>
-  Ingredients: <p><%= food.ingredients%></p>
-<%end%></h3>
+<% @foods.take(11).each do |food|%><br>
+   <p>UPC: <%= food.gtin_upc%></p>
+   <p>Description: <%= food.description%></p>
+   <p>Brand: <%= food.brand_owner%></p>
+  Ingredients: <%= food.ingredients%></p>
+<%end%> 
