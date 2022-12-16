@@ -6,5 +6,7 @@ class FoodFacade
     info = results[:foods].map do |food_info|
       Food.new(food_info)
     end
+
+    [total_hits, info]
   end
 end

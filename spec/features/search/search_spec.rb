@@ -4,7 +4,7 @@ require "rails_helper"
 RSpec.describe("Search for Quotes by keyword") do
   it("can fill in form with a keyword, hit submit and redirect to quotes index") do
     visit(root_path)
-    fill_in(:q,     with: "sweet potatos")
+    fill_in(:q,     with: "sweet potatoes")
     click_on("Search")
     expect(current_path).to(eq("/foods"))
   end

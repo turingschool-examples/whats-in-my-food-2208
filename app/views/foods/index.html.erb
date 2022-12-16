@@ -1,1 +1,11 @@
-<h1> food index</h1>
+<h1> Food info </h1>
+
+
+<%=@total_hits%> results found from search <%=@search_term %>
+<% @info.each do |i| %>
+    <p>Brand Owners: <%= i.brand_owners %></p>
+    <p>UPC: <%=i.upc %></p>
+    <p>Description: <%=i.description %></p>
+    <p>ingredients: <%=i.ingredients %></p>
+    <br>
+<% end %>
