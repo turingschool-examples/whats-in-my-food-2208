@@ -1,0 +1,14 @@
+<h2><center>Search Results</center></h2>
+
+<h4>Total Hits: <%=  %></h4>
+
+<div id='food-list'>
+  <% @foods.take(10).each do |food| %>
+    <section id="<%= food.gtinupc %>">
+      <p>GTIN/UPC: <%= food.gtinupc %></p>
+      <p>Description: <%= food.description %></p>
+      <p>Brand Owner: <%= food.brand_owner %></p>
+      <p>Ingredients: <%= food.ingredients %></p>
+    </section><br><br>
+  <% end %>
+</div>
