@@ -8,6 +8,7 @@ class FoodService
   def self.conn
     Faraday.new(url: "https://api.nal.usda.gov") do |f|
       f.params["api_key"] = ENV["food_api_key"]
+      f.params['pageSize'] = '10'
     end
   end
 end

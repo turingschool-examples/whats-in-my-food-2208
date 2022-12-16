@@ -2,7 +2,8 @@ class Food
   attr_reader :total, 
               :gtin, 
               :description, 
-              :owner
+              :owner, 
+              :ingredients
 
 
   def initialize(data)
