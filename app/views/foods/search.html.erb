@@ -1,0 +1,17 @@
+<% total_results, foods = @facade.search_foods %>
+
+<h1>Food Search Results</h1>
+<h3><%= total_results %> results found for search '<%= @facade.query %>'</h3>
+<br>
+<% if foods.count > 0 %>
+  <div class="foods">
+    <% foods.each do |food| %>
+      <p>
+        <b><%= food.description %></b><br>
+        GTIN/UPC Code: <%= food.gtinupc_code %><br>
+        Brand Owner: <%= food.brand_owner %><br>
+        Ingredients: <%= food.ingredients %>
+      </p>
+    <% end %>
+  </div>
+<% end %>
