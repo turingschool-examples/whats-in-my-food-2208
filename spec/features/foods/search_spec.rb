@@ -7,6 +7,7 @@ RSpec.describe 'food search' do
       fill_in (:q), with: "sweet potato"
       click_button "Search"
       expect(current_path).to eq('/foods')
+      expect(page).to have_content("Search Result Total: 49083")
 
       expect(page).to have_content("Description: SWEET POTATO")
       expect(page).to have_content("50 results on this page")
@@ -15,6 +16,7 @@ RSpec.describe 'food search' do
       expect(page).to have_content("Brand Owner: FRESH & EASY")
       expect(page).to have_content("Ingredients: SWEET POTATO, CHIPOTLE CHICKEN")
       expect(page).to have_content("Displaying 10 results")
+
     end
     
   end
