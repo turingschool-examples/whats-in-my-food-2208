@@ -20,21 +20,21 @@ describe "As a user," do
         it 'Then I should see a total of the number of items returned by the search.' do
           # (sweet potatoes should find more than 30,000 results)
           expect(page).to have_content("Number of Results")
-          # save_and_open_page
+          #see food_facade_spec and food_service_spec for integer testing
         end
 
         it 'Then I should see a list of TEN foods that contain the ingredient "sweet potatoes"' do
-
+          # see food_facade_spec testing array size
         end
 
-        # it "And for each of the foods I should see:
-        #   - The food's GTIN/UPC code
-        #   - The food's description
-        #   - The food's Brand Owner
-        #   - The food's ingredients" do
-        #
-        #
-        # end
+        it "And for each of the foods I should see:
+          - The food's GTIN/UPC code
+          - The food's description
+          - The food's Brand Owner
+          - The food's ingredients" do
+
+
+        end
       end
     end
   end

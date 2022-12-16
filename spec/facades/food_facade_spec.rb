@@ -12,5 +12,6 @@ describe "food facade" do
     data = FoodFacade.top_10_results('sweet potatoes')
 
     expect(data).to be_an(Array)
+    expect(data.count).to eq(10)
   end
 end
