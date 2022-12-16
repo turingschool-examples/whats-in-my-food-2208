@@ -20,16 +20,16 @@ gem 'figaro'
 
 
 group :development, :test do
-  gem 'pry'
+  gem 'pry-rails'
 end
 
 group :test do
   gem 'rspec-rails'
-  gem 'capybara'
   gem 'launchy'
+  gem 'capybara'
   gem 'simplecov'
 end
-
+ 
 group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
