@@ -8,5 +8,11 @@ RSpec.describe FoodFacade do
         expect(FoodFacade.food_finder("sweet potatoes")[0]).to be_instance_of(Food)
       end
     end
+
+    describe '#count_responses' do
+      it 'returns the total count of foods' do
+        expect(FoodFacade.count_responses("sweet potatoes")).to eq(49083)
+      end
+    end 
   end
 end
