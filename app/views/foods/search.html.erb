@@ -3,6 +3,7 @@
 <%=@food_results.count%> results on this page 
 <hr>
 <br>
+<center><h3>Displaying <%=@food_results.take(10).count%> results</h3></center>
 <%@food_results.take(10).each do |food|%>
   <p><strong>Description: </strong><%=food.description%></p>
   <p><strong>FDC ID: </strong><%=food.fdc_id%></p>

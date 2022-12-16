@@ -9,8 +9,14 @@ RSpec.describe 'food search' do
       expect(current_path).to eq('/foods')
 
       expect(page).to have_content("Description: SWEET POTATO")
-      expect(page).to_not have_content("Description: CHEESE")
+      expect(page).to have_content("50 results on this page")
+      expect(page).to have_content('Results for "sweet potato" search')
+      expect(page).to have_content("FDC ID: 477475")
+      expect(page).to have_content("Brand Owner: FRESH & EASY")
+      expect(page).to have_content("Ingredients: SWEET POTATO, CHIPOTLE CHICKEN")
+      expect(page).to have_content("Displaying 10 results")
 
+      expect(page).to_not have_content("Description: CHEESE")
     end
   end
 end
