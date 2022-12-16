@@ -13,6 +13,10 @@ describe UsdaService do
         input= "foie gras"
         # binding.pry
         expect(UsdaService.food_search(input)).to be_a Hash
+        expect(UsdaService.food_search(input)).to have_key(:totalHits)
+        expect(UsdaService.food_search(input)).to have_key(:foods)
+        expect(UsdaService.food_search(input)[:foods]).to be_a Array
+
       end
     end
   end
