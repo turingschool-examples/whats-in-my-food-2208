@@ -1,0 +1,12 @@
+<h1>Foods#Search</h1>
+
+<h4><b>Total results for <%="#{params[:q].upcase}" %></b>: <%= UsdaFacade.hits(params[:q]) %></h4>
+<hr>
+
+<% @foods.each do |food| %>
+  <p><b>GTIN/UPC code: </b><%= food.gtinupc %></p>
+  <p><b>Description: </b><%= food.description %></p>
+  <p><b>Brand Owner: </b><%= food.brand_owner %></p>
+  <p><b>Ingredients: </b><%= food.ingredients %></p>
+  <hr>
+<% end %>
