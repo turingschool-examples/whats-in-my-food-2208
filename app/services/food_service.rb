@@ -1,6 +1,6 @@
 class FoodService
     def self.search(keyword)
-        Faraday.new(url: 'https://api.nal.usda.gov/fdc/v1/foods') do |faraday|
+        conn = Faraday.new(url: 'https://api.nal.usda.gov/fdc/v1/foods') do |faraday|
           faraday.params[:query] = keyword
         end
         response = conn.get("/search?api_key=#{ENV['food_api_key']}")
