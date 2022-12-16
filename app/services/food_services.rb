@@ -1,6 +1,6 @@
 class FoodServices
   def search_food(food = nil)
-    get_url("/fdc/v1/foods/search", params: { query: "#{food }" } )
+    get_url("/fdc/v1/foods/search?query=#{food}" )
   end
 
   def get_url(url, params = nil)

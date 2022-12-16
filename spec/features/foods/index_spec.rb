@@ -19,7 +19,7 @@ RSpec.describe 'Foods' do
   describe 'index' do
     it 'has a list of foods searched for' do
       foods = FoodSearch.new.search_food('sweet potatoes')
-      require 'pry'; binding.pry
+      
       visit "/"
       fill_in "q",	with: "sweet potatoes"
       click_on 'Search'
