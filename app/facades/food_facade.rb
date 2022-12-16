@@ -5,4 +5,9 @@ class FoodFacade
       Food.new(food_info)
     end
   end
+
+  def self.count_responses(food)
+    data = FoodService.food_finder(food)
+    data[:totalHits]
+  end
 end
