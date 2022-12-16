@@ -19,7 +19,7 @@ RSpec.describe 'Foods' do
   describe 'index' do
     it 'has a list of foods searched for' do
       visit "/"
+      fill_in "q",	with: "sweet potatoes"
     end
   end
-
 end
