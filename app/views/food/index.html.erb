@@ -1,0 +1,16 @@
+<h3> Total Number of Results: <%= @Results %></h3>
+
+<h4>Top Results: </h4>
+  <% @foods.each do |food| %>
+ <ul> 
+  ID: <%=food.id %>
+  UPC: <%=food.upc %>
+  Description: <%=food.description %>
+  Brand Owner: <%=food.brand_owner %>
+    Ingredients: 
+      <% food.ingredients.each do |ingredient| %>
+        *<%= ingredient %>
+      <% end %>
+      </ul>
+  <% end %>
+ 
