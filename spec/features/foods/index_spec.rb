@@ -22,7 +22,14 @@ describe 'The Foods Index Page' do
           expect(page).to have_content('Description: SWEET POTATOES', count: 10)
         end
 
-        it "I see each food's GTIN/UPC code, description, Brand Owner, and ingredients"
+        it "I see each food's GTIN/UPC code, description, Brand Owner, and ingredients" do
+          within "#food_description_451884" do
+            expect(page).to have_content("Description: SWEET POTATOES")
+            expect(page).to have_content("GTIN/UPC Code: 832298010009")
+            expect(page).to have_content("Brand Owner: NOT A BRANDED ITEM")
+            expect(page).to have_content("Ingredients:")
+          end
+        end
       end
     end
   end

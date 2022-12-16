@@ -1,8 +1,10 @@
 <h1 style="text-align:center">Total Number of Items: <%= @data[:totalHits] %></h1>
 
 <% @foods.each do |food| %>
-  <p>Description: <%= food.description %></p>
-  <p>GTIN/UPC Code: <%= food.gtinupc %></p>
-  <p>Brand Owner: <%= food.brand_owner %></p>
-  <p>Ingredients: <%= food.ingredients %></p>
+  <div id="food_description_<%= food.fdcid %>">
+    <p>Description: <%= food.description %></p>
+    <p>GTIN/UPC Code: <%= food.gtinupc %></p>
+    <p>Brand Owner: <%= food.brand_owner %></p>
+    <p>Ingredients: <%= food.ingredients %></p>
+  </div>
 <% end %>
