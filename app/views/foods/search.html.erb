@@ -1,0 +1,12 @@
+<center><h1>Foods</h1>
+<% @query.each do |q| %>
+  <p>Total Results: <%= q.total %></p>
+  <p>UPC: <%= q.gtin %></p>
+  <p>Brand: <%= q.owner %></p>
+  <p>Description: <%= q.description %></p>
+  <p>Ingredients: <%= q.ingredients %></p>
+ 
+<% end %>
+
+
+</center>
