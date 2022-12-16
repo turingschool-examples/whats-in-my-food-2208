@@ -1,0 +1,123 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/source/Desktop/turing/3mod/exercise/whats-in-my-food-2208/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/source/Desktop/turing/3mod/exercise/whats-in-my-food-2208/app/poros/food.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/source/Desktop/turing/3mod/exercise/whats-in-my-food-2208/app/controllers/foods_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/source/Desktop/turing/3mod/exercise/whats-in-my-food-2208/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/source/Desktop/turing/3mod/exercise/whats-in-my-food-2208/app/services/food_service.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
+          2,
+          null,
+          2,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/source/Desktop/turing/3mod/exercise/whats-in-my-food-2208/app/controllers/welcome_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/source/Desktop/turing/3mod/exercise/whats-in-my-food-2208/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/source/Desktop/turing/3mod/exercise/whats-in-my-food-2208/app/models/application_record.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/source/Desktop/turing/3mod/exercise/whats-in-my-food-2208/app/jobs/application_job.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/source/Desktop/turing/3mod/exercise/whats-in-my-food-2208/app/channels/application_cable/connection.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/source/Desktop/turing/3mod/exercise/whats-in-my-food-2208/app/channels/application_cable/channel.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1671214202
+  }
+}
