@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col">
+    <H2>total number of items:</H2>
+    <%= content_tag :h3, @foods[:totalHits] %>
+  </div>
+</div>
+
+<div class="row">
+  <% @foods[:foods].each do |food| %>
+    <%= render partial: 'partials/food_item', locals: {food: food } %>
+  <% end %>
+</div>
