@@ -1,6 +1,5 @@
 class FoodFacade
-    def self.find_food(search)
-        binding.pry
-      data = FoodService.find_food(search)  
+    def self.food_search(food)
+      data = FoodService.food_search(food)  
     end
 end
