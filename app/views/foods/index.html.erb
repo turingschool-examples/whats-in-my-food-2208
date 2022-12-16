@@ -2,5 +2,10 @@
 <h3> Number of Results: <%= @total_results %> </h3>
 
 <% @top_10_results.each_with_index do |food, index| %>
-
+  <div id="food-<%= index %>">
+    <p> GTIN/UPC Code: <%=  %> </p>
+    <p> Description: <%=  %> </p>
+    <p> Brand Owner: <%=  %> </p>
+    <p> Ingredients: <%=  %> </p>
+  </div>
 <% end %>
