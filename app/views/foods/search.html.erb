@@ -1,9 +1,11 @@
 <h2>Showing 10 results out of <%= @search_result.total_hits %> for '<%= @search_result.keyword %>'</h2>
 
 <% @search_result.foods.each do |food| %>
-  <p><%= "GTIN/UPC: #{food.upc}" %></p>
-  <p><%= "Description: #{food.description}" %></p>
-  <p><%= "Brand Owner: #{food.brand_owner}" %></p>
-  <p><%= "Ingredients: #{food.ingredients}" %></p>
-  <hr>
+  <div id="food-<%= food.id %>">
+    <p><%= "GTIN/UPC: #{food.upc}" %></p>
+    <p><%= "Description: #{food.description}" %></p>
+    <p><%= "Brand Owner: #{food.brand_owner}" %></p>
+    <p><%= "Ingredients: #{food.ingredients}" %></p>
+    <hr>
+  </div>
 <% end %>
