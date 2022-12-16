@@ -20,6 +20,10 @@ RSpec.describe 'Foods' do
     it 'has a list of foods searched for' do
       visit "/"
       fill_in "q",	with: "sweet potatoes"
+      click_on 'Search'
+      expect(current_path).to eq("/foods")
+
+      expect(page).to have_content("total number of items:")
     end
   end
 end
