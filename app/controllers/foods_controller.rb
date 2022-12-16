@@ -1,7 +1,7 @@
-class FoodController < ApplicationController
+class FoodsController < ApplicationController
 
-  def search
-    search_params = params[:ingredient]
-    food = Food.where("name ILIKE?", "%#{search_params}%")
+  def index
+    search_params = params[:q]
+    @foods = FoodFacade.search_foods(search_params)
   end
 end

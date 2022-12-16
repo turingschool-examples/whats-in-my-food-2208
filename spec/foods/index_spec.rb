@@ -15,8 +15,7 @@ RSpec.describe "Foods Index Page" do
   end
 
   xit "should have a list of no more than 10 foods that contain the search item" do
-    within("#foods-#{food1.id}")
-    expect(page).to have_content("")
+  
   end
 
   xit "for each food listed, there should be the foods GTIN/UPC, description, Brand Owner, ingredients" do 
