@@ -1,0 +1,9 @@
+<div id='search-results'>
+  <% if @foods != nil %>
+    <% @foods.each do |food| %>
+      <ul>
+        <li><%= "Name: #{food.description}, Brand: #{food.brand}, UPC Code: #{food.upc}, Ingredients: #{food.ingredients}" %></li>
+      </ul>
+    <% end %>
+  <% end %>
+</div>
