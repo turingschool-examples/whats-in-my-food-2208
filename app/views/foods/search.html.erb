@@ -1,0 +1,11 @@
+<h2>Total Search Results: </h2><%= @count %>
+
+<h2>Top 10 Results: </h2>
+<ol id="foods">
+<% @foods.each do |food| %>
+  <li><strong>Description: </strong><%= food.description %></li>
+  <p><strong>GTIN/UPC: </strong><%= food.gtin_upc %></p>
+  <p><strong>Brand Owner: </strong><%= food.brand_owner %></p>
+  <p><strong>Ingredients: </strong><%= food.ingredients %></p>
+<% end %>
+</ol>
