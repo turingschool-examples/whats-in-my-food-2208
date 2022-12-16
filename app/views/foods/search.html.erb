@@ -1,0 +1,16 @@
+<h1>Foods#index</h1>
+
+<h3>Total Hits:</h3>
+
+<div id="foods">
+  <ol>
+    <% @foods.each do |food| %>
+      <li>Description: <%= food.description %></li>
+      <ul>
+        <li>gtinUpc: <%= food.gtin_upc.nil? ? 'N/A' : food.gtin_upc %></li>
+        <li>Brand Owner: <%= food.brand_owner.nil? ? 'N/A' : food.brand_owner %></li>
+        <li>Ingredients: <%= food.ingredients.nil? ? 'N/A' : food.ingredients %></li>
+      </ul>
+    <% end %>
+  </ol>
+</div>
