@@ -1,8 +1,9 @@
 <center><h1>Results for "<%=params[:q]%>" search </h1></center>
 <br><br>
-<%=@food_results.count%> results on this page 
+<h3>Search Result Total: <%=@total_hits%></h3>
 <hr>
 <br>
+<%=@food_results.count%> results on this page 
 <center><h3>Displaying <%=@food_results.take(10).count%> results</h3></center>
 <%@food_results.take(10).each do |food|%>
   <p><strong>Description: </strong><%=food.description%></p>

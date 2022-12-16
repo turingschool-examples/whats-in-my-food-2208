@@ -15,8 +15,7 @@ RSpec.describe 'food search' do
       expect(page).to have_content("Brand Owner: FRESH & EASY")
       expect(page).to have_content("Ingredients: SWEET POTATO, CHIPOTLE CHICKEN")
       expect(page).to have_content("Displaying 10 results")
-
-      expect(page).to_not have_content("Description: CHEESE")
     end
+    
   end
 end
