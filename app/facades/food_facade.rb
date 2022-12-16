@@ -1,5 +1,5 @@
 class FoodFacade
-    def self.food_search(food)
-      data = FoodService.food_search(food)  
+    def self.food_search(search)
+      data = FoodService.food_search(search)  
     end
 end
