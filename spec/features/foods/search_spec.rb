@@ -1,15 +1,18 @@
 require 'rails_helper'
 
-RSpec.describe 'Food search index page', :vcr, type: :feature do
+RSpec.describe 'Food search page', :vcr, type: :feature do
   describe 'As a user,' do
     describe 'When I visit "/"' do
       context 'And I fill in the search form with "sweet potatoes"' do
         it 'Then I should be on page "/foods"' do
-          expect(page).to have_button('')
+          expect(page).to have_field('q')
+          expect(page).to have_button('Search')
 
-          click_button ''
+          fill_out 'q', with: 'sweet potatoes'
 
-          expect(current_path).to eq(_path)
+          click_button 'search'
+
+          expect(current_path).to eq(foods_search_path)
         end
 
         it 'Then I should see a total of the number of items returned by the search.' do
