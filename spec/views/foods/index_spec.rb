@@ -12,7 +12,7 @@ RSpec.describe 'foods index' do
         expect(current_path).to eq('/foods')
       end
 
-      xit 'Then I should see a total of the number of items returned by the search.' do
+      it 'Then I should see a total of the number of items returned by the search.' do
         expect(page).to have_content('Total Hits: 49083')
       end
 
