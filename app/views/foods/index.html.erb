@@ -1,9 +1,9 @@
 <h2><center>Search Results</center></h2>
 
-<h4>Total Hits: <%=  %></h4>
+<h4>Total Hits: <%= @search.total_hits %></h4>
 
 <div id='food-list'>
-  <% @foods.take(10).each do |food| %>
+  <% @search.foods.each do |food| %>
     <section id="<%= food.gtinupc %>">
       <p>GTIN/UPC: <%= food.gtinupc %></p>
       <p>Description: <%= food.description %></p>

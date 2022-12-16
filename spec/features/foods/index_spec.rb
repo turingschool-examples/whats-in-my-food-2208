@@ -2,9 +2,14 @@ require 'rails_helper'
 
 RSpec.describe 'Foods Page', type: :feature do
   before do
+    VCR.insert_cassette 'sweet potato search'
     visit root_path
     fill_in :q, with: 'sweet potatoes'
     click_on 'Search'
+  end
+
+  after do
+    VCR.eject_cassette
   end
 
   describe 'the search functionality' do

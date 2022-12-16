@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Welcome Page', type: :feature do
   before do
+    VCR.insert_cassette 'sweet potato search'
     visit root_path
   end
 
@@ -11,6 +12,7 @@ RSpec.describe 'Welcome Page', type: :feature do
       click_on 'Search'
 
       expect(current_path).to eq('/foods')
+      VCR.eject_cassette
     end
   end
 end
