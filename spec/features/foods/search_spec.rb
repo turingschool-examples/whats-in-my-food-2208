@@ -13,6 +13,7 @@ RSpec.describe "foods search function" do
        'X-Api-Key'=>'xISxGZSXprkP9YkUCjgzm1nLtO77TgoVQtIvXgwN'
         }).
       to_return(status: 200, body: json_response, headers: {})
+      
       visit foods_path("sweet potatoes")
       expect(page).to have_content("Total Hits:49083")
       expect(page).to have_content("GTIN Code:451884")

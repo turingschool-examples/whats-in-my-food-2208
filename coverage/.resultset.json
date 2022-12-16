@@ -23,6 +23,53 @@
           null
         ]
       },
+      "/Users/source/Desktop/turing/3mod/exercise/whats-in-my-food-2208/app/controllers/foods_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/source/Desktop/turing/3mod/exercise/whats-in-my-food-2208/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/source/Desktop/turing/3mod/exercise/whats-in-my-food-2208/app/services/food_service.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
+          2,
+          null,
+          2,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/source/Desktop/turing/3mod/exercise/whats-in-my-food-2208/app/controllers/welcome_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/source/Desktop/turing/3mod/exercise/whats-in-my-food-2208/app/mailers/application_mailer.rb": {
         "lines": [
           0,
@@ -50,64 +97,6 @@
         "branches": {
         }
       },
-      "/Users/source/Desktop/turing/3mod/exercise/whats-in-my-food-2208/app/controllers/application_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/source/Desktop/turing/3mod/exercise/whats-in-my-food-2208/app/controllers/welcome_controller.rb": {
-        "lines": [
-          0,
-          0,
-          null,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/source/Desktop/turing/3mod/exercise/whats-in-my-food-2208/app/controllers/foods_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          null,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/source/Desktop/turing/3mod/exercise/whats-in-my-food-2208/app/services/food_service.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          null,
-          0,
-          null,
-          0
-        ],
-        "branches": {
-        }
-      },
       "/Users/source/Desktop/turing/3mod/exercise/whats-in-my-food-2208/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
@@ -129,6 +118,6 @@
         }
       }
     },
-    "timestamp": 1671213356
+    "timestamp": 1671214202
   }
 }
