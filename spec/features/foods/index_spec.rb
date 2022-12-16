@@ -27,6 +27,14 @@ RSpec.describe 'Foods' do
 
       expect(page).to have_content("total number of items:")
       expect(page).to have_content(foods[:totalHits])
+      expect(foods[:foods].count).to eq(10)
+
+      foods[:foods].each do |food|
+        expect(page).to have_content(food[:gtinUpc])
+        expect(page).to have_content(food[:description])
+        expect(page).to have_content(food[:brandOwner])
+        expect(page).to have_content(food[:ingredients])
+      end
     end
   end
 end
