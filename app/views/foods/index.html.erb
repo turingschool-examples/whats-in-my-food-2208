@@ -1,14 +1,14 @@
-<h2><center>Search Results</center></h2>
+<h2><center>Search Results for '<%= @user_search %>'</center></h2>
 
-<h4>Total Hits: <%= @search.total_hits %></h4>
+<p>Total Hits: <%= @search.total_hits %></p><br>
 
 <div id='food-list'>
   <% @search.foods.each do |food| %>
     <section id="<%= food.gtinupc %>">
-      <p>GTIN/UPC: <%= food.gtinupc %></p>
-      <p>Description: <%= food.description %></p>
-      <p>Brand Owner: <%= food.brand_owner %></p>
-      <p>Ingredients: <%= food.ingredients %></p>
-    </section><br><br>
+      <p><b>GTIN/UPC:</b> <%= food.gtinupc %></p>
+      <p><b>Description:</b> <%= food.description %></p>
+      <p><b>Brand Owner:</b> <%= food.brand_owner %></p>
+      <p><b>Ingredients:</b> <%= food.ingredients %></p>
+    </section><br>
   <% end %>
 </div>
