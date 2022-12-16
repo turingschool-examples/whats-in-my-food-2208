@@ -12,7 +12,7 @@ describe UsdaService do
       it "returns foods based off of ingredients query" do
         input= "foie gras"
         # binding.pry
-        expect(UsdaService.food_search(input)).to be_a Array
+        expect(UsdaService.food_search(input)).to be_a Hash
       end
     end
   end

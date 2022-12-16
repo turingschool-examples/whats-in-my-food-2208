@@ -1,6 +1,6 @@
 <h1>Foods#Search</h1>
 
-<h4><b>Total Results for <%="#{params[:q].upcase}" %><b>: <%= @foods[:totalHits] %></h4>
+<h4><b>Total results for <%="#{params[:q].upcase}" %></b>: <%= @foods[:totalHits] %></h4>
 <hr>
 
 <% @foods[:foods].first(10).each do |food| %>
