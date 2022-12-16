@@ -14,7 +14,7 @@ RSpec.describe 'welcome index' do
         end
 
         it " displays code, description, brandower and ingredients " do
-              visit root_path
+            visit root_path
             fill_in "q", with: "sweet potatoes"
             click_button "Search"
             expect(current_path).to eq(foods_path)
