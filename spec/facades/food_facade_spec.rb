@@ -7,6 +7,12 @@ RSpec.describe FoodFacade do
         expect(FoodFacade.new('sweet potatoes').find_food_by_params[2].brand).to eq("John W. Taylor Packing Co. Inc")
         expect(FoodFacade.new('sweet potatoes').find_food_by_params[3].brand).to eq("BAKO SWEET")
       end
+
+      it 'updates the total search hits for that food item', :vcr do
+        facade = FoodFacade.new('sweet potatoes')
+        facade.find_food_by_params
+        expect(facade.total_hits).to eq(49083)
+      end
     end
   end
 end

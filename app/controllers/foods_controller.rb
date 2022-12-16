@@ -1,6 +1,7 @@
 class FoodsController < ApplicationController
   def index
-    # require'pry';binding.pry
-    @foods = FoodFacade.new(params[:q]).find_food_by_params
+    facade = FoodFacade.new(params[:q])
+    @foods = facade.find_food_by_params
+    @num_search_hits = facade.total_hits
   end
 end
