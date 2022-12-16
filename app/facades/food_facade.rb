@@ -5,4 +5,9 @@ class FoodFacade
             FoodInfo.new(food_data)
         end
     end
+
+    def self.search_count(search)
+        data = FoodService.search_food(search)
+        data[:totalHits]
+    end
 end
