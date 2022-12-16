@@ -1,5 +1,6 @@
 class FoodsController < ApplicationController
   def search
-    @foods = FoodFacade.search_foods_by_keyword(params[:query])
+    @food = params[:query]
+    @total_count, @foods = FoodFacade.search_foods_by_keyword(@food)
   end
 end
