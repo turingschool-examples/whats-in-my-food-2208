@@ -4,11 +4,11 @@ class Food
               :brand_owner,
               :ingredients
 
-  def initialize(foods)
-    @gtinupc = foods[:gtinUpc]
-    @description = foods[:description]
-    @brand_owner = foods[:brandOwner]
-    @ingredients = foods[:ingredients]
+  def initialize(data)
+    @gtinupc = data[:gtinUpc]
+    @description = data[:description]
+    @brand_owner = data[:brandOwner]
+    @ingredients = data[:ingredients]
   end
 
 end
