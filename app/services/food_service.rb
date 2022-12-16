@@ -10,4 +10,10 @@ class FoodService
     output = JSON.parse(response.body, symbolize_names: :true)[:totalHits]
     # require "pry"; binding.pry
   end
+
+  def self.top_10_results(keyword)
+    response = conn.get("foods/search?query=#{keyword}&dataType=Branded&pageSize=10&")
+    output = JSON.parse(response.body, symbolize_names: :true)[:foods]
+    # require "pry"; binding.pry
+  end
 end
