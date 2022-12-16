@@ -19,13 +19,14 @@ RSpec.describe 'Foods' do
   describe 'index' do
     it 'has a list of foods searched for' do
       foods = FoodSearch.new.search_food('sweet potatoes')
-      
+
       visit "/"
       fill_in "q",	with: "sweet potatoes"
       click_on 'Search'
       expect(current_path).to eq("/foods")
 
       expect(page).to have_content("total number of items:")
+      expect(page).to have_content(foods[:totalHits])
     end
   end
 end
