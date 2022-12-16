@@ -1,7 +1,7 @@
 class FoodsSearchController < ApplicationController
   def index
     @json = FoodFacade.food_search(params[:q])
-    @food = food_results
+    @foods = food_results
     @total_hits = total_hits
   end
 

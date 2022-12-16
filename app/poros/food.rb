@@ -1,5 +1,5 @@
 class Food
-  attr_reader :gtinUpc, :description, :brandOwner, :ingredients
+  attr_reader :gtinupc, :description, :brandowner, :ingredients
 
   def initialize(attributes)
     @gtinupc = attributes[:gtinUpc]

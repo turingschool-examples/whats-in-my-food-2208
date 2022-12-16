@@ -21,5 +21,15 @@ RSpec.describe 'Food ingredient search' do
 
       expect(page).to have_content('Total number of results: 49083')
     end
+
+    it 'shows ten foods with their attributes' do
+      fill_in(:q, with: 'sweet potatoes')
+      click_button('Search')
+
+      expect(page).to have_content('GTIN/UPC code: 832298010009')
+      expect(page).to have_content('SWEET POTATOES')
+      expect(page).to have_content('NOT A BRANDED ITEM')
+      expect(page).to have_content('ORGANIC SWEET POTATOES.')
+    end
   end
 end

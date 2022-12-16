@@ -1,1 +1,10 @@
-<%= "Total number of results: #{@total_hits}"%>
+<%= "Total number of results: #{@total_hits}" %>
+
+<% @foods.each do |food| %>
+    <ul>
+        <li><%= "GTIN/UPC code: #{food.gtinupc}" %></li>
+        <li><%= "GTIN/UPC code: #{food.description}" %></li>
+        <li><%= "GTIN/UPC code: #{food.brandowner}" %></li>
+        <li><%= "GTIN/UPC code: #{food.ingredients}" %></li>
+    </ul>
+<% end %>
