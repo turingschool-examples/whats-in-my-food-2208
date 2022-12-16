@@ -1,5 +1,5 @@
 class FoodService
-    def self.find_foods(search)
+    def self.food_search(search)
         response = conn.get("/fdc/v1/foods/search?query=#{search}")
 
         data = JSON.parse(response.body, symbolize_names: true)
