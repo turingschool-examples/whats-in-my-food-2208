@@ -6,7 +6,7 @@ class FoodFacade
     #   foods: create_foods(data[:foods])
     # }
 
-    FoodSearchResult.new(data[:totalHits], create_foods(data[:foods]))
+    FoodSearchResult.new(keyword, data[:totalHits], create_foods(data[:foods]))
   end 
 
   def self.create_foods(data)
