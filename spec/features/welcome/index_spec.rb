@@ -21,6 +21,7 @@ RSpec.describe 'Welcome Index Page', type: :feature do
         it 'I see a list of food items', :vcr do
           expect(current_path).to eq('/foods')
           within '#search-results' do
+            expect(page).to have_content("There are 49083 results for that search. Here are the top 10")
             expect(page).to have_content("Name: SWEET POTATOES")
             expect(page).to have_content("Brand: John W. Taylor Packing Co. Inc")
             expect(page).to have_content("UPC Code: 076700002019")
