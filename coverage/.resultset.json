@@ -1,0 +1,482 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/astrid/z_turing/3m/assesments/whats-in-my-food-2208/config/environment.rb": {
+        "lines": [
+          null,
+          1,
+          null,
+          null,
+          1
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/whats-in-my-food-2208/config/application.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/whats-in-my-food-2208/config/boot.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/whats-in-my-food-2208/config/environments/test.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/whats-in-my-food-2208/config/initializers/application_controller_renderer.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/whats-in-my-food-2208/config/initializers/assets.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/whats-in-my-food-2208/config/initializers/backtrace_silencers.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/whats-in-my-food-2208/config/initializers/content_security_policy.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/whats-in-my-food-2208/config/initializers/cookies_serializer.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          1
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/whats-in-my-food-2208/config/initializers/filter_parameter_logging.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/whats-in-my-food-2208/config/initializers/inflections.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/whats-in-my-food-2208/config/initializers/mime_types.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/whats-in-my-food-2208/config/initializers/new_framework_defaults_5_2.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/whats-in-my-food-2208/config/initializers/wrap_parameters.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/whats-in-my-food-2208/config/routes.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/whats-in-my-food-2208/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/whats-in-my-food-2208/app/facades/food_facade.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          10,
+          10,
+          100,
+          null,
+          10,
+          null,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/whats-in-my-food-2208/app/services/food_service.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          11,
+          11,
+          null,
+          null,
+          null,
+          1,
+          11,
+          11,
+          null,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/whats-in-my-food-2208/app/poros/food.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          102,
+          102,
+          102,
+          102,
+          null,
+          null,
+          1,
+          71,
+          null,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/whats-in-my-food-2208/spec/features/foods/search_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          7,
+          7,
+          7,
+          null,
+          7,
+          null,
+          7,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          4,
+          4,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/whats-in-my-food-2208/spec/poros/food_poro_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          3,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/whats-in-my-food-2208/spec/services/food_service_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/whats-in-my-food-2208/app/controllers/welcome_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/whats-in-my-food-2208/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/astrid/z_turing/3m/assesments/whats-in-my-food-2208/app/controllers/foods_controller.rb": {
+        "lines": [
+          1,
+          1,
+          7,
+          7,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1671213636
+  }
+}

@@ -1,4 +1,4 @@
-class FoodController < ApplicationController
+class FoodsController < ApplicationController
   def search
     @search_term = params[:q]
     @foods = FoodFacade.search(params[:q])

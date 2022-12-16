@@ -9,21 +9,20 @@ RSpec.describe 'Food search page', :vcr, type: :feature do
           expect(page).to have_field('q')
           expect(page).to have_button('Search')
   
-          fill_out 'q', with: 'sweet potatoes'
+          fill_in 'q', with: 'sweet potatoes'
   
-          click_button 'search'
+          click_button 'Search'
         end
 
         it 'Then I should be on page "/foods"' do
-          expect(current_path).to eq(foods_search_path)
+          expect(current_path).to eq(foods_path)
         end
 
         it 'Then I should see a total of the number of items returned by the search.' do
           expect(page).to have_selector('#result-count')
-          within '#result-count' do
-            expect(page).to match(/^(\d+|\d{1,3}(,\d{3})*)(\.\d+)?$/)
-            expect(page.gsub(',', '_').to_i).to >= 30_000
-          end
+          count = page.find('#result-count')
+          expect(count).not_to match(/\D/)
+          expect(count.text.to_i).to be >= 30_000
         end
 
         it 'Then I should see a list of TEN foods that contain the ingredient "sweet potatoes"' do
