@@ -17,3 +17,9 @@
 /yarn-error.log
 
 .byebug_history
+coverage
+.rubocop.yml
+.vscode/settings.json
+.DS_Store
+# Ignore application configuration
+/config/application.yml
