@@ -14,9 +14,18 @@ RSpec.describe 'food results' do
     end
 
     it 'takes me to /foods where I see a list of ten foods that contain my search item' do
-      visit '/foods'
+      visit root_path
 
+      fill_in 'q', with: 'sweet potatoes'
+      click_button 'Search'
       expect(current_path).to eq('/foods')
+      
+      expect(page).to have_content("49083")
+      expect(page).to have_content("code")
+      expect(page).to have_content("description")
+      expect(page).to have_content("brand:")
+      expect(page).to have_content("ingredients:")
+      
     end
   end
 end
