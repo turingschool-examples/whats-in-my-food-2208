@@ -1,8 +1,8 @@
 class FoodFacade
     def self.food_search(search)
         data = FoodService.food_search(search)
-        data[:foods].first(10).map do |food_data|
-            FoodItem.new(food_data)
+        data[:foods].map do |food|
+            FoodItem.new(food)
         end
     end
     

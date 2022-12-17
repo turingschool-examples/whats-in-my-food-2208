@@ -9,10 +9,11 @@ RSpec.describe 'food results' do
       click_button 'Search'
 
       expect(current_path).to eq(foods_path)
-      expect(page).to have_content(@foods.upc_code)
+      
+      expect(page).to have_content(@foods)
     end
 
-    xit 'takes me to /foods where I see a list of ten foods that contain my search item' do
+    it 'takes me to /foods where I see a list of ten foods that contain my search item' do
       visit '/foods'
 
       expect(current_path).to eq('/foods')
