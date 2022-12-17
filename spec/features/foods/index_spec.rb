@@ -5,7 +5,7 @@ RSpec.describe 'food results' do
     it ' displays the foods information ' do
       visit root_path
 
-      fill_in 'q', with: 'sweet potato'
+      fill_in 'q', with: 'sweet potatoes'
       click_button 'Search'
 
       expect(current_path).to eq(foods_path)

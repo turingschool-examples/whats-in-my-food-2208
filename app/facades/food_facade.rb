@@ -2,7 +2,7 @@ class FoodFacade
     def self.food_search(search)
         data = FoodService.food_search(search)
         data[:foods].map do |food|
-            FoodItem.new(food)
+            Food.new(food)
         end
     end
     

@@ -1,4 +1,4 @@
-class FoodItem
+class Food
   attr_reader :code, 
               :description,
               :brand, 
@@ -9,5 +9,6 @@ class FoodItem
     @description = data[:description]
     @brand = data[:brandOwner]
     @ingredients = data[:ingredients]
+    #binding.pry
   end
 end
