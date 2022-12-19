@@ -4,7 +4,7 @@ RSpec.describe FoodService do
   describe 'instance methods' do
     describe '#find_food_by_name' do
       it 'returns all foods as a JSON object', :vcr do
-        all_foods = FoodService.new.find_food_by_name('sweet potato')
+        all_foods = FoodService.new.search('sweet potato')
         expect(all_foods).to be_a(Hash)
         expect(all_foods[:foods]).to be_a(Array)
 

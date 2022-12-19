@@ -1,7 +1,7 @@
 <div id='search-results'>
-  <% if @foods != nil %>
-    <%= "There are #{@num_search_hits} results for that search. Here are the top #{@foods.count}"%>
-    <% @foods.each do |food| %>
+  <% if @food_facade.foods != nil %>
+    <%= "There are #{@food_facade.total_hits} results for that search. Here are the top #{@food_facade.foods.count}"%>
+    <% @food_facade.foods.each do |food| %>
       <ul>
         <li><%= "Name: #{food.description}, Brand: #{food.brand}, UPC Code: #{food.upc}, Ingredients: #{food.ingredients}" %></li>
       </ul>

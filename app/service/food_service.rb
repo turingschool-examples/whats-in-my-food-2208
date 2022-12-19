@@ -1,5 +1,5 @@
 class FoodService
-  def find_food_by_name(params)
+  def search(params)
     get_url("/fdc/v1/foods/search?query=#{params}")
   end
 
