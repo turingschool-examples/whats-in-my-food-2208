@@ -1,5 +1,5 @@
 class FoodDecorator < SimpleDelegator
   def foods?
-    self.foods != nil
+    !foods.empty?
   end
 end
