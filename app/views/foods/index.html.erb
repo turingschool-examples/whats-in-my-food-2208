@@ -1,0 +1,10 @@
+<div id='search-results'>
+  <% if FoodDecorator.new(@food_facade).foods? %>
+    <%= "There are #{@food_facade.total_hits} results for that search. Here are the top #{@food_facade.foods.count}"%>
+    <% @food_facade.foods.each do |food| %>
+      <ul>
+        <li><%= "Name: #{food.description}, Brand: #{food.brand}, UPC Code: #{food.upc}, Ingredients: #{food.ingredients}" %></li>
+      </ul>
+    <% end %>
+  <% end %>
+</div>
