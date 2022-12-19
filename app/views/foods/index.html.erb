@@ -1,5 +1,5 @@
 <div id='search-results'>
-  <% if @food_facade.foods != nil %>
+  <% if FoodDecorator.new(@food_facade).foods? %>
     <%= "There are #{@food_facade.total_hits} results for that search. Here are the top #{@food_facade.foods.count}"%>
     <% @food_facade.foods.each do |food| %>
       <ul>
