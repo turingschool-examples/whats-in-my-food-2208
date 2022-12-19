@@ -4,7 +4,7 @@ RSpec.describe Food do
   it "exists" do 
     attrs = {
       description: "sweet potato",
-      fdc_id: "1234",
+      fdc_id: 1234,
       brand_owner: "steve",
       ingredients: "lots of stuff"
     }
