@@ -1,11 +1,10 @@
-<center><h1>Results for "<%=params[:q]%>" search </h1></center>
+<center><h1>Results for "<%=@facade.food_item%>" search </h1></center>
 <br><br>
-<h3>Search Result Total: <%=@total_hits%></h3>
+<h3>Search Result Total: <%=@facade.total_hits%></h3>
 <hr>
 <br>
-<%=@food_results.count%> results on this page 
-<center><h3>Displaying <%=@food_results.take(10).count%> results</h3></center>
-<%@food_results.take(10).each do |food|%>
+<center><h3>Displaying 10 results</h3></center>
+<%@facade.foods.each do |food|%>
   <p><strong>Description: </strong><%=food.description%></p>
   <p><strong>FDC ID: </strong><%=food.fdc_id%></p>
   <p><strong>Brand Owner: </strong><%=food.brand_owner%></p>
