@@ -1,0 +1,13 @@
+<center><h1>Results for "<%=@facade.food_item%>" search </h1></center>
+<br><br>
+<h3>Search Result Total: <%=@facade.total_hits%></h3>
+<hr>
+<br>
+<center><h3>Displaying 10 results</h3></center>
+<%@facade.foods.each do |food|%>
+  <p><strong>Description: </strong><%=food.description%></p>
+  <p><strong>FDC ID: </strong><%=food.fdc_id%></p>
+  <p><strong>Brand Owner: </strong><%=food.brand_owner%></p>
+  <p><strong>Ingredients: </strong><%=food.ingredients%></p>
+  <br><hr>
+<%end%>
