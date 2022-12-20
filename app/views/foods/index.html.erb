@@ -1,0 +1,8 @@
+<h1> Total Count: <%= @total_count %> </h1>
+
+<% @foods.each do |food| %>
+    <p>code: <%= food.code %></p>
+    <p>description:<%= food.description %></p>
+    <p>brand: <%= food.brand %></p>
+    <p>ingredients: <%= food.ingredients%></p>
+<% end %>
